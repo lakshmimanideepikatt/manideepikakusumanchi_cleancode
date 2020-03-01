@@ -11,10 +11,10 @@ public class App
         int option=sc.nextInt();
         if(option==1) {
         	HashMap<String,Integer>housingStandards=new HashMap<String,Integer>();
-        	housingStandards.put("below average", 1500);
-        	housingStandards.put("average",2000);
-        	housingStandards.put("above average", 2500);
-        	housingStandards.put("excellent",3000);
+        	housingStandards.put("Standard materials", 1200);
+        	housingStandards.put("Above standard materials",1500);
+        	housingStandards.put("High standard materials", 1800);
+        	housingStandards.put("High standard material and fully automated home",2500);
         	for(Entry<String,Integer>map:housingStandards.entrySet()) {
         		System.out.println("Type of house materials "+map.getKey()+" has a cost of "+map.getValue());
         	}
